@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 
-
 :root {
   margin: 0;
   padding: 0;
@@ -11,20 +10,42 @@ display: flex;
 }
 
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+html {
+  height: 100vh;
+  background-color: var(--c-base);
+}
 
 body {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  
-
+  max-width: 600px;
 }
 
 .pageContent {
   display: flex;
   flex-direction: column;
   margin: auto;
-  flex: 75% 25%;
+  height: 100vh;
+  /* justify-items: center; */
+}
+
+.mainContent {
+  flex-grow: 1;
 }
 
 .article {
@@ -37,9 +58,22 @@ body {
   align-items: center;
 }
 
-.buttons {
- display: flex;
- justify-content: center;
+.btnContainer {
+ display: grid;
+ /* justify-content: flex-start; */
+ outline: auto;
+ grid-template-columns: 1fr 1fr 1fr;
+ padding-bottom: 30vh;
+}
+
+
+/* #prevBtn,
+#nectBtn {
+  justify-self: center;
+} */
+
+#allBtn {
+  justify-self: flex-end;
 }
 
 .hide-article {
@@ -55,4 +89,8 @@ button {
   font-family: inherit;
   padding: .5em;
   margin: .5rem;
+}
+
+img {
+  width: 100%;
 }
