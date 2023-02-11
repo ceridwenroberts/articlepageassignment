@@ -20,30 +20,13 @@ const articles = [
   },
 ];
 
-// const articles = [
-  //     {
-  //       key: '1st article',
-  //       title: 'Om mig',
-  //       content: 'Min erfarenhet av programmering är ganska begränsad. Det jag kan sedan tidigare har jag antingen lärt mig via "lär dig koda"-appar de senaste åren, eller det lilla som var en del av programmet för Journalistik och multimedia när jag gick det. Dels var det lite grundläggande html och CSS, men länge sen och väldigt lite, och handlade mer om hur "data mining" och hur man hanterar stora mängder data för att se mönster och sånt som kan vara intressant ur ett journalistiskt perspektiv. Min kompetens ligger istället mer åt estetik/design och att lära mig förverkliga idéer om interaktiv design/animation intresserar mig. Men jag leds gärna in på andra banor.'
-  //     },
-  //     {
-  //       key: '2nd article',
-  //       title: 'Projektidé',
-  //       content: 'Jag tänker mig en nedräknare till antingen användarens fördelse dag eller julafton. Något tillfälle då man får paket. Dels för att det är roligt, för att det inte blir för svårt och för att det lämpar sig ganska bra för en design.'
-  //     },
-  //     {
-  //       key: '3rd article',
-  //       title: 'Projektdesign',
-  //       picture: 'src/ScreenshotHUMY.png',
-  //       // alt: "Screen shot of HUMY - Property Website",
-  //       content: (
-  //         <p>Jag tänker mig en gridbaserad layout där icke-använda element är paket. <a href="https://dribbble.com/shots/19836318-HUMY-Property-Website"> Baserat på HUMY - Property Website</a>
-  //         </p>),
-  //     },
-  //   ];
-
-
 const Pagination = () => {
+
+  //NOT WORKING
+  // useEffect(() => {
+  //   document.title = currentIndex === null ? 'All Articles' : articles[currentIndex].title;
+  // }, [currentIndex]);
+
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrevious = () => {
@@ -69,12 +52,12 @@ const Pagination = () => {
       </div>
       {currentIndex === null ? (
         articles.map((article, index) => (
-          <div key={index}>
+          <div className='articleSection' key={index}>
             <h3>{article.title}</h3>
             <p>{article.textContent}</p>
             <img src={article.image} alt={article.alt} />
             {console.log(index) }
-            <button onClick = {() => setCurrentIndex(index)}>To article</button>
+            <button className='btnSmall' onClick = {() => setCurrentIndex(index)}>To article</button>
           </div>
         ))
       ) : (
@@ -85,14 +68,14 @@ const Pagination = () => {
         </div>
       )}
       {currentIndex !== null && (
-        <div className='btnContainer'>
-          <button id='prevBtn' onClick={handlePrevious} disabled={currentIndex === 0}>
+        <div className='btnContainer sticky'>
+          <button id='prevBtn' className='btnSmall' onClick={handlePrevious} disabled={currentIndex === 0}>
             Previous
           </button>
-          <button id='nextBtn' onClick={handleNext} disabled={currentIndex === articles.length - 1}>
+          <button id='nextBtn' className='btnSmall' onClick={handleNext} disabled={currentIndex === articles.length - 1}>
             Next
           </button>
-          <button id='allBtn' onClick={handleAll}>All</button>
+          <button id='allBtn' className='btnSmall' onClick={handleAll}>All</button>
         </div>
         
       )}
