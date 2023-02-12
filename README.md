@@ -1,6 +1,6 @@
 # assignment1
-# articlepageassignment
 
+# articlepageassignment
 
 bebas neue 96
 line-hight 86px
@@ -25,7 +25,6 @@ padding x 44, y 12
 infobox
 poppins reg 16px line-height 24px
 
-
 navbar
 brand name:
 bebas neue 32px
@@ -46,12 +45,11 @@ option boxes
 bebas neue 40
 
 shaddows
-big: 
+big:
 box-shadow: 12px 12px 0px #000000;
 small:
 box-shadow: 6px 6px 0px #000000;
 text-shadow: 4px 4px 0px #000000;
-
 
 colors:
 black text #000
@@ -61,3 +59,4 @@ lilac #DBACFF
 mint #D7FFC5;
 yellow #FEC477;
 orange #FC7B53
+whiteBtn #000

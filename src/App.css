@@ -4,22 +4,31 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-h1 {
-  font-family: 'Bebas Neue', cursive;
-  font-size: 96px;
-  line-height: 86px;
-  margin: 0;
+: root {
+  --angle-sm: 5.78deg;
+  --angle-lg: -6.65deg;
+
+  --c-black: #0A0909;
+  --c-blackText: #000;
+  --c-lilac: #DBACFF;
+  --c-mint: #D7FFC5;
+  --c-orange: #FC7B53;
+  --c-whiteBg: #FFFDFA;
+  --c-whiteBgBtn: #000;
+  --c-yellow: #FEC477;
+
+  --sdw-box-sm: 6px 6px 0px #000000;
+  --sdw-box-lg: 12px 12px 0px #000000;
+  --sdw-text: 4px 4px 0px #000000;
+
+  --pad-primary: 40px:
+  --pad-secondary: 30px;
 }
 
-h3 {
-  font-family: 'Bebas Neue';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 48px;
-  padding-left: 30px;
-  padding-right: 30px;
-  margin: 0;
+* {
+  margin:0;
+  margin-block-start: 0;
+    margin-block-end: 0;
 }
 
 p {
@@ -28,7 +37,56 @@ p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+}
 
+h1, h2, h3, h4, button {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 96px;
+  line-height: 86px;
+  margin: 0;
+  /* padding: 40px; */
+  /*position: absolute; -isf left and top only, to padding*/
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 48px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0;
+  /*position: absolute; -isf left and top only, to padding*/
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 38px;
+  padding-left: 40px;
+  padding-top: 23px;
+  /*position: absolute; -isf left and top only, to padding*/
+}
+
+h4 {
+  font-size: 64px;
+  line-height: 77px;
+  left: 40px;
+  top: 572px;
+  color: #FEC477;
+  border: 1px solid #000000;
+  text-shadow: 4px 4px 0px #000000;
+}
+
+h5 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
 }
 
 :root {
@@ -72,7 +130,8 @@ body {
 .header,
 .mainContent,
 .btnContainer,
-.articleSection {
+.articleSection,
+.titleContainer {
   background: #FFFDFA;
   border: 1px solid #0A0909;
   border-radius: 20px;
@@ -84,29 +143,46 @@ body {
 }
 
 
-.pageContent {
+.wrapper {
   display: flex;
   flex-direction: column;
   margin: auto;
   height: 100vh;
-  /* justify-items: center; */
-}
-
-.mainContent {
-  flex-grow: 1;
-  padding: 40px;
 }
 
 .article {
-  margin: 0 auto;
-  /* max-width: 35rem; */
-  padding: 40px;
-  margin: 0;
   display: flex;
   flex-direction: column;
   justify-items: center;
-  align-items: center;
+  /* align-items: center; */
+  /* background-color: var(--c-black); */
 }
+
+
+.box {
+  border: 1px solid #0A0909;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  padding: 40px;
+  background-color: var(--c-whiteBg);
+}
+
+#text {
+  
+}
+
+
+
+.mainContent {
+  flex-grow: 1;
+  /* display: flex; */
+  /* padding: 40px; */
+}
+
+
 
 .btnContainer {
   display: grid;
@@ -133,15 +209,50 @@ button {
 
 .btnSmall {
   display: flex;
-flex-direction: row;
-justify-content: flex-end;
-align-items: flex-start;
-  font-family: 'Bebas Neue';
-  font-style: normal;
-  font-weight: 400;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 6px 14px;
+  box-shadow: 6px 6px 0px #000000;
+  border-radius: 20px;
+
+}
+
+
+.btnSmallText {
   font-size: 16px;
   line-height: 14px;
+  flex: none;
+  flex-grow: 0;
+  order: 0;
 }
+
+
+.btnBig {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 44px;
+  gap: 10px;
+  border: 1px solid #0A0909;
+  box-shadow: 6px 6px 0px #000000;
+  border-radius: 20px;
+
+}
+
+.btnBigText {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+/* identical to box 
 
 /* #prevBtn,
 #nectBtn {
@@ -157,13 +268,18 @@ align-items: flex-start;
 }
 
 
-button {
+/* button {
   text-decoration: none;
-  font-family: inherit;
   padding: .5em;
   margin: .5rem;
-}
+} */
 
 img {
   width: 100%;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  
 }
