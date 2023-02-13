@@ -2,61 +2,94 @@
 
 # articlepageassignment
 
-bebas neue 96
-line-hight 86px
-padding 40px
+Week 1 – Intro: Assignments
 
--"- 40px
-padding 30px
+Basics + HTML/CSS + Interactivity 1
+Show – React basics
 
-poppins semibold 20px
-(-5.78%)
+Assignment – recreate and improve
 
-small button
-bebas neue 16px
-border-radius: 20
-padding left right 14px
-paddin top bottom 6px
+    Recreate the code/steps of the presentation
+    ...but use content, styling and images of your own choosing
+    
+    The 1st article should be about you what you've done so far when it comes to programming and what you would like to explore further on. A couple of sentences is enough.
+    
+    The 2nd article should be about your idea for you first personal project (see below). The name of the idea/project and a motivation to why you choose that idea. A couple of sentences is enough.
+    
+    An additional article, the 3rd article, should be about the design style you wish to apply to your first personal project (see below for instructions). Include a motivation as to why you picked that style. A couple of sentences is enough.
+    
+    Add buttons that switch between all three articles (like pagination).
+   
+    Make the button reflect which article is shown. (I.e. the button for a given article has another styling than the other buttons when the active article is shown.)
+    
+    BONUS: Add a button that shows all articles at the same time.
+    
+    BONUS: update the title depending on what article is shown. You can watch the useState/useEffect video below for an example if we don't go through this during class.
+   
+    Make sure you commit and push your work to a public github repo (or a private repo but by also inviting me as a contributor).
+    When you are done with all the assignments, add a link to your GitHub repo in the assignment for week 1. (You don't need to create a GitHub Pages.)
 
-big button
-Poppins semibold 20px
-padding x 44, y 12
+You should be ready to show your result/progress during our first lecture next week.
+Watch:
 
-infobox
-poppins reg 16px line-height 24px
+How to use useState/useEffect
 
-navbar
-brand name:
-bebas neue 32px
-padding top 23px
-padding left 40px
+https://www.youtube.com/watch?v=QQYeipc_cik
 
-pagelinks
-poppins reg 16
-space between 40px
+We will talk more about useEffect in another lecture but nice if you watch that part too.
 
-containers
-border 1px (general)
+Learn React #3: Props, Destructuring, and Spreading
 
-accent boxes (organge)
-poppins semibold 20
+https://www.youtube.com/watch?v=SbwtUHxRej8&list=PLQg6GaokU5CyvExiaMgXP_BS5WWNBfZJN&index=3
 
-option boxes
-bebas neue 40
+Learn React #5: Maps and Loops in JSX
 
-shaddows
-big:
-box-shadow: 12px 12px 0px #000000;
-small:
-box-shadow: 6px 6px 0px #000000;
-text-shadow: 4px 4px 0px #000000;
+https://www.youtube.com/watch?v=5llXA0RTYIU
 
-colors:
-black text #000
-black #0A0909
-white #FFFDFA
-lilac #DBACFF
-mint #D7FFC5;
-yellow #FEC477;
-orange #FC7B53
-whiteBtn #000
+Ternary Operator in React and JSX
+
+https://youtube.com/watch?v=fAUkKh-WfLM&t=625
+
+Nice talk about how ternaries can work with react. Starts from 10:25. The other parts of the video are also nice but talks about other things than the things we've already talked about.
+
+Optional: 10 React Hooks Explained
+
+https://www.youtube.com/watch?v=TNhaISOUy6Q
+
+Might be better to watch this later on. But nice to watch it during the course.
+Assignment – Idea for First Personal React Project
+
+Start thinking about a super simple react site that you would like to make (for week 3). Either a copy of something that already exists or something new that you would like to make. Later during the course there will be opportunities to make more advanced programs but right now we want something super simple and focus mostly on styling/CSS. It's all right to change the idea later on.
+
+Examples:
+
+    Calculate letters/characters/words in a text.
+    Random number generator: flip a coin or like a dice (1-6).
+    Vecka.nu (that updates without refresh, cool if the title can reflect that when pinned, make sure to test by changing the time on your computer),
+    Calculate how many days it is until Christmas or until next CSN payment, or whatever (We will talk about how to work with dates and time next week).
+
+(Calculator and TODO-app too large of a project at this stage.)
+
+Your idea should later on be added to a github repo (we will go about how to use git and github next week).
+
+Your idea should be added to your github repo for Week 1/Assignment 1.
+Assignment – Styling of First Personal React Project
+
+Find a visual style to use for your "First idea"-app. A suggestion is to pick something from https://dribbble.com/tags/free. Typeface, colors and icons would can be something for you to modify if you like, but other that that your app should match the design you pick very closely.
+
+Also to be included in you github repo later on (for now you can save a link for yourself).
+
+Your idea should be added to your github repo for Week 1/Assignment 1.
+For next week
+
+Get a head start by watching the videos below. Or save them for next week, up to you.
+
+Watch:
+
+    Getting started with Node (and npm) https://www.youtube.com/watch?v=ENrzD9HAZK4
+    Learn Git In 15 Minutes https://www.youtube.com/watch?v=USjZcfj8yxE
+    Git vs. GitHub: What's the difference? https://www.youtube.com/watch?v=wpISo9TNjfU
+    Optional: Linus Torvalds introducing Git https://www.youtube.com/watch?v=4XpnKHJAok8
+    Optional: Git Tutorial for Beginners - Git & GitHub Fundamentals In Depth https://www.youtube.com/watch?v=DVRQoVRzMIY
+    Optional: Which JS Framework is best? https://www.youtube.com/watch?v=cuHDQhDhvPE&t=43s
+    Optional: Frameworks https://youtube.com/watch?v=HG3TjJMI_-I&t=2460
